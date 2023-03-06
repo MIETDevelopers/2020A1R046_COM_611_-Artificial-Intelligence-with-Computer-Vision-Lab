@@ -1,0 +1,177 @@
+#(Python is a high-level, interpreted programming language known for its simplicity, readability, and ease of use. Here are some basic concepts and examples in Python:)
+
+
+
+#First Python Program-------------------------------------------------------
+print "Hello, Python!"
+
+
+#Variables and Data Types-------------------------------------------------------
+#In Python, variables are used to store data values. Here is an example of how to declare a variable and assign a value to it:
+name = "Alice"
+age = 25
+height = 1.65
+
+
+#Python has several data types, including integers, floating-point numbers, strings, booleans, and more. Here are some examples:
+# Integers----------------------------------------------------------------
+x = 10
+y = -5
+z = 0
+
+# Floating-point numbers--------------------------------------------------
+a = 3.14
+b = -2.5
+c = 0.0
+
+# Strings--------------------------------------------------------------------
+name = "Alice"
+message = 'Hello, world!'
+long_text = """This is a long
+multi-line string."""
+
+# Booleans-----------------------------------------------------------------------
+is_true = True
+is_false = False
+
+
+#Operators---------------------------------------------------------------------------
+Python has many operators for performing operations on data values. Here are some examples:
+# Arithmetic operators
+x = 10
+y = 5
+z = x + y
+w = x - y
+q = x * y
+r = x / y
+s = x % y
+
+# Comparison operators
+a = 5
+b = 10
+c = a == b
+d = a != b
+e = a < b
+f = a > b
+g = a <= b
+h = a >= b
+
+# Logical operators
+p = True
+q = False
+r = p and q
+s = p or q
+t = not p
+
+
+#Control Flow Statements-------------------------------------------------------------
+Control flow statements allow you to control the flow of your program based on certain conditions. Here are some examples:
+
+# if statement
+age = 25
+if age >= 18:
+    print("You are an adult")
+
+# for loop
+for i in range(5):
+    print(i)
+
+# while loop
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+
+# break statement
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
+
+# continue statement
+for i in range(10):
+    if i % 2 == 0:
+        continue
+    print(i)
+
+
+#Functions--------------------------------------------------------------------
+#Functions allow you to group a set of related statements together and reuse them throughout your program. Here is an example of how to define and call a function:
+# Function definition
+def greet(name):
+    print(f"Hello, {name}!")
+
+# Function call
+greet("Alice")
+
+
+#Classes and Objects-----------------------------------------------------------
+#Python is an object-oriented programming language, which means you can define classes and create objects from those classes. Here is an example:
+# Class definition
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def greet(self):
+        print(f"Hello, my name is {self.name} and I am {self.age} years old.")
+
+# Object creation
+alice = Person("Alice", 25)
+
+# Object method call
+alice.greet()
+
+
+#Lists and Tuples------------------------------------------------------------
+#Lists and tuples are used to store collections of data. Lists are mutable, meaning you can change their contents, while tuples are immutable, meaning you cannot change their contents. Here are some examples:
+# Lists
+fruits = ["apple", "banana", "cherry"]
+numbers = [1, 2, 3, 4, 5]
+mixed = ["Alice", 25, True]
+
+# Tuples
+coordinates = (10, 20)
+person = ("Alice", 25, "New York")
+
+
+#Dictionaries-----------------------------------------------------------------
+#Dictionaries are used to store key-value pairs. Each key in a dictionary maps to a corresponding value. Here is an example:
+# Dictionary
+person = {"name": "Alice", "age": 25, "city": "New York"}
+
+
+#Modules-------------------------------------------------------------------------
+#Python has a large number of built-in modules that you can use to perform various tasks. You can also create your own modules to reuse code across different programs. Here is an example:
+# Using a built-in module
+import random
+print(random.randint(1, 10))
+
+# Creating a module
+# my_module.py
+def greet(name):
+    print(f"Hello, {name}!")
+
+# main.py
+import my_module
+my_module.greet("Alice")
+
+
+#File I/O--------------------------------------------------------------------------
+#Python allows you to read from and write to files on your computer. Here are some examples:
+# Writing to a file
+with open("my_file.txt", "w") as file:
+    file.write("Hello, world!")
+
+# Reading from a file
+with open("my_file.txt", "r") as file:
+    contents = file.read()
+    print(contents)
+
+
+#Exceptions----------------------------------------------------------------------------
+#Python has a built-in mechanism for handling errors called exceptions. When an error occurs, an exception is raised, which can be caught and handled by your program. Here is an example:
+try:
+    x = 1 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")
