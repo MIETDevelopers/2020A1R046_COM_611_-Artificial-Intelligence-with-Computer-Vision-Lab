@@ -1,1 +1,1 @@
-# 2020A1R046_COM_611_-Artificial-Intelligence-with-Computer-Vision-Lab
+# 2020A1R046_COM_611_Artificial-Intelligence-with-Computer-Vision-Lab
